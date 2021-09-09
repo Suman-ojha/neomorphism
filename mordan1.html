@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Slider</title>
+</head>
+<style>
+    body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.banner1,.banner2,.banner3,.banner4{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+img{
+    display: flex;
+    width: 120%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: zoom-out 3s linear infinite;
+}
+
+.text-box{
+    width: 600px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: #ffffff;
+    animation: textup 12s linear infinite;
+    transform: translateY(100px);
+}
+
+.text-box h1{
+    margin-bottom: 40px;
+}
+
+.text-box p{
+    display: flex;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 80px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.text-box span{
+    background-color: red;
+    height: 1px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    
+}
+
+.banner1{
+    animation: slide1 12s linear infinite;
+}
+.banner2{
+    animation: slide2 12s linear infinite;
+}
+.banner3{
+    animation: slide3 12s linear infinite;
+}
+.banner4{
+    animation: slide4 12s linear infinite;
+}
+
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+@keyframes slide4{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+@keyframes zoom-out{
+    100%{
+        width: 100%;
+    }
+}
+@keyframes textup{
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.text-box1{
+    animation-delay: 0s;
+}
+.text-box2{
+    animation-delay: 3s;
+}
+.text-box3{
+    animation-delay: 6s;
+}
+.text-box4{
+    animation-delay: 9s;
+}
+</style>
+<body>
+    <div class="banner1">
+        <img src="img/slide1.jpg" alt="">
+        <div class="text-box text-box1">
+            <span></span>
+            <h1>Silence Is Not Enough</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius reprehenderit eligendi expedita molestias quisquam illo, amet ipsa. Odit vero autem dicta, quos illum magni nemo quod doloribus rem corrupti voluptas!</p>
+        </div>
+    </div>
+    <div class="banner2">
+        <img src="img/slide2.jpg" alt="">
+        <div class="text-box text-box2">
+            <span></span>
+            <h1>Future Of Our Next Generation</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius reprehenderit eligendi expedita molestias quisquam illo, amet ipsa. Odit vero autem dicta, quos illum magni nemo quod doloribus rem corrupti voluptas!</p>
+        </div>
+    </div>
+    <div class="banner3">
+        <img src="img/slide3.jpg" alt="">
+        <div class="text-box text-box3">
+            <span></span>
+            <h1>Know Your Passion</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius reprehenderit eligendi expedita molestias quisquam illo, amet ipsa. Odit vero autem dicta, quos illum magni nemo quod doloribus rem corrupti voluptas!</p>
+        </div>
+    </div>
+    <div class="banner4">
+        <img src="img/slide4.png" alt="">
+        <div class="text-box text-box4">
+            <span></span>
+            <h1>Keep Your Dreams Alive</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius reprehenderit eligendi expedita molestias quisquam illo, amet ipsa. Odit vero autem dicta, quos illum magni nemo quod doloribus rem corrupti voluptas!</p>
+        </div>
+    </div>
+</body>
+</html>

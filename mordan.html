@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nemorphism UI design</title>
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css />
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        background: #d4e8fc;
+    }
+
+    h1 {
+        font-family: sans-serif;
+        font-weight: normal;
+        font-size: 25px;
+        letter-spacing: 4px;
+        padding: 200px 0 100px;
+        color: #5555555;
+        text-align: center;
+    }
+
+    .social-media {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .social-media a {
+        display: flex;
+        background: #e3edf7;
+        height: 175px;
+        width: 175px;
+        margin: 15px 15px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+            6px 6px 10px -1px rgba(255, 255, 255, 0.70);
+
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        transition: transform 0.5s;
+        border-radius: 10px;
+    }
+
+    .social-media a i {
+        font-size: 100px;
+        color: #777777;
+        transition: transform 0.5s;
+
+    }
+
+    .social-media a:hover {
+        box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+            inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+            -0.5px -0.5px 6px -1px rgba(255, 255, 255, 1),
+            0.5px 0.5px 0px rgba(0, 0, 0, 0.05),
+            0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        transform: translateY(2px);
+
+    }
+
+    .social-media a:hover i {
+        transform: scale(0.90);
+    }
+
+    .social-media a:hover .fa-facebook {
+        color: #3b5998;
+    }
+
+    .social-media a:hover .fa-whatsapp {
+        color: #4fce5d;
+    }
+
+    .social-media a:hover .fa-twitter {
+        color: #00acee;
+    }
+
+    .social-media a:hover .fa-instagram {
+        color: #f14843;
+    }
+
+    .social-media a:hover .fa-youtube {
+        color: #ff0000;
+    }
+    .social-media a:hover .fa-linkedin {
+        color: #0077b5;
+    }
+    .social-media a:hover .fa-linkedin {
+        color: #0077b5;
+    }
+    .social-media a:hover .fa-apple {
+        color: rgba(0, 0, 0, 0.308);
+    }
+</style>
+
+<body>
+    <h1>FOLLW US ON SOCIAL MEDIA</h1>
+    <div class="social-media">
+        <a href="https://www.facebook.com" target="_"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com" target="_"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.whatsapp.com" target="_"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.twitter.com" target="_"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/" target="_"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/" target="_"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.apple.com/in/" target="_"><i class="fab fa-apple"></i></a>
+    </div>
+</body>
+
+</html>
